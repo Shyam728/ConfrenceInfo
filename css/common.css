@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: .5;
+}
+
+
+/* Header */
+
+#home {
+    background-color: #293f50;
+    padding-bottom: 2rem;
+}
+
+.mx-wd{
+    max-width: 1650px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-mx-wd{
+    background-color: #293f50;
+}
+.header-content-mx-wd{
+    background-image: linear-gradient(90deg, #a1d3b0, #cbe2c1);
+
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #293f50;
+    padding-bottom: 4rem;
+}
+
+.logo {
+    border-top: 4px solid #648880;
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 1;
+    padding-top: 2rem;
+    color: #f0f0f0;
+}
+
+.logo:hover {
+    color: #648880;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.dates {
+    color: #648880;
+    text-emphasis: none;
+    font-size: 1.3rem;
+    align-self: end;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.nav {
+    display: flex;
+    margin-top: 1rem;
+    align-items: end;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 1rem;
+    align-self: end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    /* font-weight: bold; */
+}
+
+.nav-link:hover {
+    color: #648880;
+}
+
+
+a {
+    text-decoration: none;
+    color: #648880;
+}
+
+#home {
+    padding-bottom: 0;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+
+
+/* Spkeaker Section */
+
+
+
+.header-content {
+    background-image: linear-gradient(90deg, #a1d3b0, #cbe2c1);
+    color: #648880;
+    padding: 3% 20%;
+    text-align: center;
+    word-spacing: .3rem;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    color: #888;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 3% auto;
+    padding: 0 1rem;
+}
+
+
+
+
+
+/* Foooter Section */
+
+#footer {
+    background-color: #293f50;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    color: #648880;
+    padding: 2rem;
+    align-items: center;
+}
+
+.footer li {
+    margin: 0 .4rem;
+}
+
+.footer .nav-link {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+
+@media (max-width: 890px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .nav {
+        /* background-color: #000; */
+        color: #fff;
+        padding: 1rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+
+    .nav li {
+        margin: 0 4px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        font-weight: bold;
+        color: #648880
+    }
+
+    .dates {
+        align-items: center;
+        align-self: center;
+        color: #fff;
+    }
+
+    .header-content{
+        text-align: start;
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .card {
+        margin: 2rem 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0 ;
+        padding-top:1rem ;
+    }
+
+    .footer .nav {
+        background-color: transparent;
+        color: #fff;
+        padding: 1rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+    }
+
+    .footer .nav-link{
+        font-size: 12px;
+        font-weight: bold;
+        color: #648880;
+    }
+    .nav-link:hover{
+        color: #fff;
+    }
+
+}

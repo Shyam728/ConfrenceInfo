@@ -1,0 +1,51 @@
+.location {
+    text-align: end;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+}
+
+.address {
+    padding: 0 5%;
+    text-align: start;
+}
+
+.address:last-child {
+    padding: 0 10%;
+    text-align: start;
+    background-color: red;
+}
+
+.address h2 {
+    color: #648880;
+    margin-bottom: 1rem;
+
+}
+
+.address p,
+a {
+    color: #888888;
+    padding-bottom: 1rem;
+}
+
+.address a {
+    color: #648880;
+}
+
+
+@media screen and (max-width:600px) {
+    .location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 5rem;
+    }
+
+    .address{
+        margin-bottom: 2rem;
+    }
+
+    
+}
